@@ -4,17 +4,13 @@ Swagger is a Tool to
 - Interact with API
 - Document APIs using Swagger UI
 
-
 - Generates Auto generated API document from the meta data in the code
 
 - Can generate in multiple forms like json, html
 
 - When API changes, developer just need to update the API metadata. Swagger will update the documentation automatically
 
-
-- Now it is called as OpenAPI
-
-
+- Now it is called as OpenAPI 3
 
 Steps
 
@@ -22,16 +18,13 @@ Steps
 
 2. Enabking swagger in the code
 
-3. COnfigure Swagger
+3. Configure Swagger
 
 4. Add details as annotations to API
-
-
 
 Endpoint for accessing docs as json
 
 http://localhost:8080/v2/api-docs
-
 
 Endpoint for accessing docs as html
 
@@ -50,26 +43,9 @@ Lof of annotations provided like
 @ApiModel
 @ApiModelProperty
 
-
 Drawbacks
 
-- Lot of annoying annotations which increase the numbe rof lines of code
-- In acse of circular dependencies between model objects, swagger wont work
+- Lot of annoying annotations which increase the number of lines of code
+- In case of circular dependencies between model objects, swagger wont work
 
-
-Spring Rest Docs
-
-- Inbuilt in Spring framework
-- Produces accurate and concise document
-- Document will be written during unit test case
-- No additional configuration required
-- The API documentation is generated after the successful run of test case
-- Generated API document also displays the test data
-
-Dependency
-
-1. spring-restdocs-mockmvc - to generate api document
-
-2. asciidoctor-maven-plugin - to generate html for the api document
-
-3. Spring Auto Rest Docs - To automate API documentation
+The alternative option is to use Spring Rest Docs
