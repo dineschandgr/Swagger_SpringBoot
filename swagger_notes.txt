@@ -16,7 +16,7 @@ Steps
 
 1. Add Swagger Spring Dependency
 
-2. Enabking swagger in the code
+2. Enabling swagger in the code
 
 3. Configure Swagger
 
